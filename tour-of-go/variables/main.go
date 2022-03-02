@@ -55,6 +55,23 @@ func blockVariablesWithFormatting() {
 	fmt.Printf("# type: %T, value: %v\n", opB, opB)
 }
 
+/**
+Go quirks:
+- variables must be explicitly casted
+*/
+func convertingValues() {
+	number := 5
+	var half float64 = float64(number) / 2
+	var long uint64 = uint64(half)
+
+	fmt.Printf("# %v %f %v\n", number, half, long)
+}
+
+func constantValues() {
+	const INTERVAL = 2
+	fmt.Printf("# Scheduled interval is set to %v\n", INTERVAL)
+}
+
 func main() {
 	fmt.Println("#############################################################")
 	fmt.Println("# Variables")
@@ -64,5 +81,6 @@ func main() {
 	intializedWithoutVar()
 	numericTypes()
 	blockVariablesWithFormatting()
+	constantValues()
 	fmt.Println("#############################################################")
 }
