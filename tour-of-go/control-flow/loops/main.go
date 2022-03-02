@@ -31,7 +31,7 @@ func printFromTo(from, to int) {
 
 func main() {
 	fmt.Println("#############################################################")
-	fmt.Println("# Sandbox")
+	fmt.Println("# Loops")
 	fmt.Println("# ========================================================= #")
 	from := 10
 	to := 15

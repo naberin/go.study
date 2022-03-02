@@ -61,7 +61,7 @@ func main() {
 	var request int = 2
 	var total_cost float64 = 67.75
 	fmt.Println("#############################################################")
-	fmt.Println("# Sandbox")
+	fmt.Println("# Conditionals")
 	fmt.Println("# ========================================================= #")
 	fmt.Printf("# Is number %v FizzBuzz? %v\n", number, fizzBuzzButOnlyEvalNumber(number))
 	fmt.Printf("# Requesting to add %v into list of %v items: %v items\n", request, number, add(request, number))
