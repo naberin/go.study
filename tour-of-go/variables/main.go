@@ -7,8 +7,10 @@ import (
 
 func defaultValues() {
 	var num int
+	var floats float64
 	var boolean bool
-	fmt.Println("#", num, boolean)
+	var strings string
+	fmt.Printf("# %v %f %v %q\n", num, floats, boolean, strings)
 }
 
 /**
