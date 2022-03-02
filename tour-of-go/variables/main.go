@@ -40,6 +40,19 @@ func numericTypes() {
 	fmt.Println("# max-unsigned-int", maxUInt64)
 }
 
+/**
+Go quirks:
+- variable types and value can be printed with printF's %T and %v substitution variables
+*/
+func blockVariablesWithFormatting() {
+	var (
+		opA int  = 1
+		opB uint = math.MaxInt
+	)
+	fmt.Printf("# type: %T, value: %v\n", opA, opA)
+	fmt.Printf("# type: %T, value: %v\n", opB, opB)
+}
+
 func main() {
 	fmt.Println("#############################################################")
 	fmt.Println("# Variables")
@@ -48,5 +61,6 @@ func main() {
 	initializedWithoutAutomaticTypes()
 	intializedWithoutVar()
 	numericTypes()
+	blockVariablesWithFormatting()
 	fmt.Println("#############################################################")
 }
